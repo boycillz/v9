@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1DEDE"
+    tools:context=".ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/coverIV"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:background="@color/colorPrimaryDark">
+
+            </ImageView>
+            <!--email-->
+            <LinearLayout
+                android:id="@+id/linear_email"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/coverIV"
+                android:orientation="vertical"
+                android:background="@android:color/white">
+
+                <RelativeLayout
+                    android:id="@+id/relative_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:layout_marginStart="16dp">
+
+                    <ImageView
+                        android:id="@+id/emailIV"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_circle_radius"
+                        android:padding="10dp"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/ic_email_white"
+                        android:tint="@android:color/white"/>
+
+                    <TextView
+                        android:id="@+id/title_email_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_toEndOf="@id/emailIV"
+                        android:text="Email"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/email_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title_email_tv"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_toEndOf="@id/emailIV"
+                        android:textSize="12sp"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--No. Telephone-->
+            <LinearLayout
+                android:id="@+id/linear_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/linear_email"
+                android:orientation="vertical"
+                android:background="@android:color/white">
+                <RelativeLayout
+                    android:id="@+id/relative_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="16dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_circle_radius"
+                        android:src="@drawable/ic_call_white"
+                        android:padding="10dp"
+                        android:id="@+id/callIV"
+                        android:tint="@android:color/white"
+                        android:layout_alignParentStart="true"/>
+
+                    <TextView
+                        android:id="@+id/title_call_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_toEndOf="@id/callIV"
+                        android:text="No. Telepon"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/call_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title_call_tv"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_toEndOf="@id/callIV"
+                        android:textSize="12sp"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--home address-->
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/linear_phone"
+                android:orientation="vertical"
+                android:id="@+id/linear_home"
+                android:background="@android:color/white">
+                <RelativeLayout
+                    android:id="@+id/relative_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="16dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_circle_radius"
+                        android:src="@drawable/ic_home_white"
+                        android:padding="10dp"
+                        android:id="@+id/addressIV"
+                        android:tint="@android:color/white"
+                        android:layout_alignParentStart="true"/>
+
+                    <TextView
+                        android:id="@+id/title_address_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_toEndOf="@id/addressIV"
+                        android:text="Alamat Rumah"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/address_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title_address_tv"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_toEndOf="@id/addressIV"
+                        android:textSize="12sp"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--pekerjaan address-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/linear_home"
+                android:orientation="vertical"
+                android:background="@android:color/white">
+                <RelativeLayout
+                    android:id="@+id/relative_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="16dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_circle_radius"
+                        android:src="@drawable/ic_home_white"
+                        android:padding="10dp"
+                        android:id="@+id/jobIV"
+                        android:tint="@android:color/white"
+                        android:layout_alignParentStart="true"/>
+
+                    <TextView
+                        android:id="@+id/title_job_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_toEndOf="@id/jobIV"
+                        android:text="Pekerjaan"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/job_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title_job_tv"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_toEndOf="@id/jobIV"
+                        android:textSize="12sp"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--avatar profile-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/avatarProfile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/ic_default_face_white"
+                    android:layout_marginStart="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#77000000">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/nameTV"
+                        android:textSize="36sp"
+                        android:textColor="@android:color/white"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginStart="8dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+<!--Floating action button-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_edit_white"
+        android:id="@+id/float_action_edit_profile"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/logo_app"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/recycle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#000000"
+        />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/login_btn"
+        android:background="@drawable/reg_btn_style"
+        android:text="Register" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/reg_btn_style"
+        android:text="Login" />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+<!--    <style name="GFSTextInputLayoutTheme" parent="TextAppearance.AppCompat">-->
+<!--        &lt;!&ndash; Hint color and label color in FALSE state &ndash;&gt;-->
+<!--        <item name="android:textColorHint">@android:color/holo_blue_dark</item>-->
+<!--        &lt;!&ndash; Label color in TRUE state and bar color FALSE and TRUE State &ndash;&gt;-->
+<!--        <item name="colorAccent">@color/light_grey</item>-->
+<!--        <item name="colorControlNormal">@color/light_grey</item>-->
+<!--        <item name="colorControlActivated">@color/gfs_blue</item>-->
+<!--    </style>-->
+</resources>
