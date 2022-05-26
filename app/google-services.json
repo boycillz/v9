@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "458368315559",
+    "firebase_url": "https://testskripsi-75ae4.firebaseio.com",
+    "project_id": "testskripsi-75ae4",
+    "storage_bucket": "testskripsi-75ae4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458368315559:android:0281b16112d0d5796b2b82",
+        "android_client_info": {
+          "package_name": "com.azismihsan.testskripsi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "458368315559-q5f788cp8pm1l9jdmi577ehq2jg012a1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvIvLFp-bf1VAE97eQaHoRT8bYTUFWWTM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "458368315559-q5f788cp8pm1l9jdmi577ehq2jg012a1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
